@@ -1,4 +1,4 @@
-package com.john.bean;
+package com.john.boot.bean;
 
 public class Book {
     private String isbn;

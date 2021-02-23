@@ -1,7 +1,6 @@
-package com.john.bean;
+package com.john.boot.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 //@Component
 @ConfigurationProperties(prefix = "mycar")

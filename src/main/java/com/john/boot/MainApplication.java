@@ -1,14 +1,9 @@
-package com.john;
+package com.john.boot;
 
-import ch.qos.logback.core.db.DBHelper;
-import com.john.bean.Book;
-import com.john.bean.User;
-import com.john.config.MyConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfigurationExcludeFilter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.TypeExcludeFilter;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -35,7 +30,7 @@ public class MainApplication {
         Object bean2 = run.getBean("xiaoming");
         System.out.println("组件：" + bean == bean2);*/
 
-        //com.john.config.MyConfig$$EnhancerBySpringCGLIB$$2ca30928@127d7908
+        //com.john.boot.config.MyConfig$$EnhancerBySpringCGLIB$$2ca30928@127d7908
 /*        MyConfig bean1 = run.getBean(MyConfig.class);
         System.out.println(bean1);
 
@@ -56,7 +51,7 @@ public class MainApplication {
         DBHelper bean3 = run.getBean(DBHelper.class);
         System.out.println(bean3);*/
 
-        boolean book = run.containsBean("book");
+       /* boolean book = run.containsBean("book");
         System.out.println(book);
 
         boolean b = run.containsBean("xiaoming");
@@ -65,7 +60,7 @@ public class MainApplication {
         boolean ur = run.containsBean("ur");
         System.out.println(ur);
         boolean bk = run.containsBean("bk");
-        System.out.println(bk);
+        System.out.println(bk);*/
 
     }
 }

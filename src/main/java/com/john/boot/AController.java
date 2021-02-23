@@ -1,4 +1,4 @@
-package com;
+package com.john.boot;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

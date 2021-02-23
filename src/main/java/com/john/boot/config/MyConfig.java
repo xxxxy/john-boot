@@ -1,12 +1,10 @@
-package com.john.config;
+package com.john.boot.config;
 
 import ch.qos.logback.core.db.DBHelper;
-import com.john.bean.Book;
-import com.john.bean.Car;
-import com.john.bean.User;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import com.john.boot.bean.Book;
+import com.john.boot.bean.Car;
+import com.john.boot.bean.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
 
