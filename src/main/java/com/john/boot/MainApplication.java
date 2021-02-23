@@ -1,5 +1,8 @@
 package com.john.boot;
 
+import com.john.boot.bean.Book;
+import com.john.boot.bean.User;
+import com.john.boot.config.MyConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfigurationExcludeFilter;
@@ -13,8 +16,8 @@ import org.springframework.context.annotation.FilterType;
 //@ComponentScan(basePackages = "")
 @SpringBootConfiguration
 @EnableAutoConfiguration
-@ComponentScan(excludeFilters = { @ComponentScan.Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
-        @ComponentScan.Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) })
+@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
+        @ComponentScan.Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class)})
 public class MainApplication {
     public static void main(String[] args) {
         //返回IOC容器
@@ -30,9 +33,10 @@ public class MainApplication {
         Object bean2 = run.getBean("xiaoming");
         System.out.println("组件：" + bean == bean2);*/
 
-        //com.john.boot.config.MyConfig$$EnhancerBySpringCGLIB$$2ca30928@127d7908
-/*        MyConfig bean1 = run.getBean(MyConfig.class);
-        System.out.println(bean1);
+        /*
+        com.john.boot.config.MyConfig$$EnhancerBySpringCGLIB$$2ca30928@127d7908
+        MyConfig bean1 = run.getBean(MyConfig.class);
+        System.out.println("bean1 class:" + bean1);
 
         User xiaoming = bean1.xiaoming();
         User xiaoming1 = bean1.xiaoming();
@@ -41,9 +45,9 @@ public class MainApplication {
 
         User xiaoming2 = bean1.xiaoming();
         Book java = bean1.java();
-        System.out.println(xiaoming2.getBook() == java);
+        System.out.println(xiaoming2.getBook() == java);*/
 
-        System.out.println("-----------------------------------------");
+        /*System.out.println("-----------------------------------------");
         String[] beanNamesForType = run.getBeanNamesForType(User.class);
         for (String s : beanNamesForType) {
             System.out.println(s);
@@ -51,13 +55,13 @@ public class MainApplication {
         DBHelper bean3 = run.getBean(DBHelper.class);
         System.out.println(bean3);*/
 
-       /* boolean book = run.containsBean("book");
-        System.out.println(book);
+        /*boolean book = run.containsBean("book1");
+        System.out.println("book 组件是否存在:" + book);
 
         boolean b = run.containsBean("xiaoming");
-        System.out.println(b);
+        System.out.println("xiaoming 组件是否存在:" + b);*/
 
-        boolean ur = run.containsBean("ur");
+       /* boolean ur = run.containsBean("ur");
         System.out.println(ur);
         boolean bk = run.containsBean("bk");
         System.out.println(bk);*/
