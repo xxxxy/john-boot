@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="ur" class="com.john.bean.User">
+    <bean id="ur" class="com.john.boot.bean.User">
         <property name="name" value="zhangsan"></property>
         <property name="age" value="10"></property>
     </bean>
-    <bean id="bk" class="com.john.bean.Book">
+    <bean id="bk" class="com.john.boot.bean.Book">
         <property name="isbn" value="123"></property>
         <property name="name" value="java"></property>
         <property name="price" value="10"></property>

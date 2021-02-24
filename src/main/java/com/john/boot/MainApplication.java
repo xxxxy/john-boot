@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfigurationExcludeFilter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.WebProperties;
 import org.springframework.boot.context.TypeExcludeFilter;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -66,5 +67,10 @@ public class MainApplication {
         boolean bk = run.containsBean("bk");
         System.out.println(bk);*/
 
+        int beanDefinitionCount = run.getBeanDefinitionCount();
+        System.out.println("beanDefinitionCount:" + beanDefinitionCount);
+
+        String[] beanNamesForType = run.getBeanNamesForType(WebProperties.class);
+        System.out.println("length:" + beanNamesForType.length);
     }
 }

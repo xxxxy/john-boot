@@ -15,7 +15,7 @@ public class HelloController {
     @Autowired
     Car car;
 
-    @RequestMapping("/car")
+    @RequestMapping("/car1")
     public Car getCar() {
         return car;
     }
