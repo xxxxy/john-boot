@@ -1,0 +1,30 @@
+person:
+  #userName: '小\n明'
+  boss: false
+  birth: 2020/01/01
+  age: 1
+  pet:
+    name: 小白
+    weight: 10
+  interests:
+    - 篮球
+    - 足球
+    - 羽毛球
+  animal: [ 狗子,坤坤 ]
+  #score: { 语文:10,数学:20,英语:30 }
+  score:
+     math: 20
+     english: 10
+  salarys:
+    - 10
+    - 20
+    - 40
+  allPets:
+    sick:
+      - name: 狗子
+        weight: 2
+      - name: 坤坤
+        weight: 3
+    health: [ { name: 小白,weight: 4 },{ name: 大白,weight: 5 } ]
+  user-name:
+
